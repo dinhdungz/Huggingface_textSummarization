@@ -1,0 +1,4 @@
+gradio == 4.1.1
+transformers == 4.35.0
+tensorflow == 2.14.0
+
