@@ -1,10 +1,10 @@
 ---
-title: {{title}}
-emoji: {{emoji}}
-colorFrom: {{colorFrom}}
-colorTo: {{colorTo}}
-sdk: {{sdk}}
-sdk_version: {{sdkVersion}}
+title: {{Text Summarization}}
+emoji: {{🤗}}
+colorFrom: {{blue}}
+colorTo: {{green}}
+sdk: {{gradio}}
+sdk_version: {{4.1.1}}
 app_file: app.py
 pinned: false
 ---
