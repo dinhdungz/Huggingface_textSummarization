@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Deploy_HF
+name: Deploy_HG
 
 # Controls when the workflow will run
 on:
@@ -25,14 +25,12 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Runs a single command using the runners shell
       - name: Add remote
         env:
-          HF: ${{ secrets.HF }}
-        run: git remote add space https://dinhdung:$HF@huggingface.co/spaces/dinhdung/Text-Summarize-demo
+          HG: ${{ secrets.HG }}
+        run: git remote add space https://dinhdung:$HG@huggingface.co/spaces/dinhdung/Text-Summarize-demo
 
-      # Runs a set of commands using the runners shell
       - name: Push to Hub
         env:
-          HF: ${{ secrets.HF }}
-        run: git push --force https://dinhdung:$HF@huggingface.co/spaces/dinhdung/Text-Summarize-demo main
+          HG: ${{ secrets.HG }}
+        run: git push --force https://dinhdung:$HG@huggingface.co/spaces/dinhdung/Text-Summarize-demo main
